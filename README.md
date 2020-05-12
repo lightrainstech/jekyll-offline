@@ -3,8 +3,9 @@
 ruby gem/jekyll plugin to use service workers and make site content available offline. When visitors load a site, the service worker will be registered and cache content on their device, enabling people to read the content offline/without a network connection.
 
 Many thanks to @gauntface and @jakearchibald for two great resources on Service Workers:
-* [HTML 5 Rocks service worker tutorial]( http://www.html5rocks.com/en/tutorials/service-worker/introduction/)
-* [Offline cookbook](https://jakearchibald.com/2014/offline-cookbook)
+
+-   [HTML 5 Rocks service worker tutorial](http://www.html5rocks.com/en/tutorials/service-worker/introduction/)
+-   [Offline cookbook](https://jakearchibald.com/2014/offline-cookbook)
 
 ## Installation
 
@@ -12,7 +13,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
 group 'jekyll-plugins' do
-  gem 'jekyll-offline', :git => 'git://github.com/jeremiak/jekyll-offline.git'
+  gem 'jekyll-offline', :git => 'git://github.com/lightrainstech/jekyll-offline.git'
 end
 ```
 
@@ -33,6 +34,7 @@ The plugin does most of the work for you, but you have to initialize the service
 You can use a variety of strategies to respond to requests. These strategies were pulled from [the offline cookbook](https://jakearchibald.com/2014/offline-cookbook/#serving-suggestions-responding-to-requests) with minimal changes.
 
 Configure `jekyll-offline` to use a given strategy by adding the following to your `_config.yml`:
+
 ```
 ...
 offline:
@@ -40,17 +42,17 @@ offline:
 ```
 
 You can supply the following options as the value for `strategy`:
-* `cache-only`
-* `network-only`
-* `cache-first-network-fallback`
-* `network-first-cache-fallback`
-* `cache-network-race`
-* `cache-then-network` (default)
+
+-   `cache-only`
+-   `network-only`
+-   `cache-first-network-fallback`
+-   `network-first-cache-fallback`
+-   `cache-network-race`
+-   `cache-then-network` (default)
 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/jekyll-offline. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
-
 
 ## License
 
