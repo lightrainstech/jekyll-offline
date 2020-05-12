@@ -39,6 +39,7 @@ Configure `jekyll-offline` to use a given strategy by adding the following to yo
 ...
 offline:
   strategy: << whatever you want >>
+  version: << cache_version_number >>
 ```
 
 You can supply the following options as the value for `strategy`:
@@ -49,6 +50,8 @@ You can supply the following options as the value for `strategy`:
 -   `network-first-cache-fallback`
 -   `cache-network-race`
 -   `cache-then-network` (default)
+
+`cache_version_number` can be anything and any change to this will result in re-caching your whole website.
 
 ## Contributing
 
